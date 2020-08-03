@@ -23,3 +23,38 @@ html, body {
   display:flex;
   flex:1;
 }
+
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex:1;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-image: url("/img/gradient_lavender.png");
+}
+
+.instructions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black
+}
+
+.App h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1em;
+}
