@@ -77,3 +77,7 @@ p {
   margin: 20px 0px;
 }
 
+/* applied to ALL bubbles, sizing/location is done inside the bubble.js file */
+.bubble {
+  position: absolute;
+}
