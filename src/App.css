@@ -22,6 +22,7 @@ html, body {
   height:100%;
   display:flex;
   flex:1;
+  font-family: "Avenir Next", sans-serif;
 }
 
 
@@ -49,12 +50,30 @@ html, body {
 
 .App h1 {
   font-size: 4em;
+  margin: 10px;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: 1em;
+  margin: 15px 0px;
 }
 
 p {
   font-size: 1em;
+  font-style: normal;
+  margin: 5px;
 }
+
+.sidebar {
+  /* Ignore flex display */
+  position: absolute;
+  top: 0;
+  left: 7px;
+}
+
+.num_bubbles {
+  font-size: 2em;
+  font-weight: lighter;
+  margin: 20px 0px;
+}
+

@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import Button from '@material-ui/core/Button';
+// Button api from: https://material-ui.com/components/buttons/
 
 function Sidebar(props) {
     // when the button is clicked, change the background color
@@ -9,8 +11,8 @@ function Sidebar(props) {
       <p className="num_bubbles">{props.num}</p>
       <h2>Bubbles Popped</h2>
       <p>Tap the bubbles to pop them.</p>
-      <button onClick = {() => {}}
-      >Change up the colors</button>
+      <Button size="small" variant="contained" color="primary" onClick = {() => {}}
+      >Change up the colors</Button>
 
     </div>
 }

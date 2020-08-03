@@ -4,6 +4,7 @@ function Bubble(props) {
     const [numBubbles, setNumBubbles] = useState(0)
     // below useEffect runs on first load to see if the game has been played before
     // updates the number of bubbles pressed
+    // BROKEN - not adding, it's doing strng concat
     // useEffect(()=>{
     //     const storedNum = localStorage.getItem('numBubbles')
     //     if(storedNum) {
