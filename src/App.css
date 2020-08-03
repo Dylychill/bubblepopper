@@ -80,4 +80,6 @@ p {
 /* applied to ALL bubbles, sizing/location is done inside the bubble.js file */
 .bubble {
   position: absolute;
+  z-index: 1;
+  /* z is set so the bubbles will be on top of the text */
 }

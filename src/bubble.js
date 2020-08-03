@@ -19,8 +19,8 @@ function Bubble(props) {
   // for position, get random top and left based on max
   let height = 50;
   let side = Math.floor((Math.random() * window.innerWidth));
-  console.log(side + "the side");
-  console.log(window.innerWidth + "window");
+  // console.log(side + "the side");
+  // console.log(window.innerWidth + "window");
 
   return <div className="bubble" style={{top:height + "px", left: side + "px"}}>
     <img style={{width:size + "px"}}
