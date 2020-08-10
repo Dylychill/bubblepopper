@@ -89,3 +89,8 @@ p {
   z-index: 1;
   /* z is set so the bubbles will be on top of the text */
 }
+
+/* Broken currently */
+.bubble img:hover {
+  animation: pulse 0.3s linear 1;
+}
