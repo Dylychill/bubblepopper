@@ -11,8 +11,9 @@ function Sidebar(props) {
       <p className="num_bubbles">{props.num}</p>
       <h2>Bubbles Popped</h2>
       <p>Tap the bubbles to pop them.</p>
-      <Button size="small" variant="contained" color="primary" onClick = {() => {}}
-      >Change up the colors</Button>
+      <Button size="small" variant="contained" color="primary" onClick = {() => {
+        console.log("change background image of app.js")
+      }}>Change up the colors</Button>
 
     </div>
 }

@@ -6,15 +6,19 @@ html {
   font-size: 15px;
 }
 
+/* selectors specifically for smaller screens */
 @media (min-width: 400px) {
-  html { /* TABLET */
-    font-size: 18px;
+  html {
+    font-size: 1em;
+  }
+  .App h1 {
+    font-size: 2em;
   }
 }
 
 @media (min-width: 768px) {
   html { /* DESKTOP */
-    font-size: 21px;
+    /* font-size: 21px; */
   }
 }
 
@@ -37,7 +41,9 @@ html, body {
   left:0;
   right:0;
   bottom:0;
-  background-image: url("/img/gradient_lavender.png");
+  /* background-image: url("/img/gradient_lavender.png"); */
+  background-image: url("/img/gradient_orange&pink.png");
+
 }
 
 .instructions {
