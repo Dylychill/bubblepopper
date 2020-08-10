@@ -1,3 +1,7 @@
+/* All imported fonts right here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
 * {
   box-sizing: border-box;
 }
@@ -51,12 +55,17 @@ html, body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: black
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  padding: 3px;
 }
 
 .App h1 {
   font-size: 4em;
   margin: 10px;
+  /* I want the Roboto font to show up after a minute */
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
