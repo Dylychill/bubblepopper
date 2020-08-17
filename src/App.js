@@ -11,19 +11,32 @@ function App(props) {
   const inputRef = useRef()
   console.log(numBubbles + "in app")
   // if already played, set the number - runs on load once
-  // useEffect(()=>{
-  //   const storedNum = parseInt(localStorage.getItem('numBubbles'))
-  //   if(storedNum) {
-  //     setNumBubbles(storedNum)
-  //   }
-  // }, [])
+  useEffect(()=>{
+    const storedNum = parseInt(localStorage.getItem('numBubbles'))
+    if(storedNum) {
+      setNumBubbles(storedNum)
+    }
+  }, [])
 
   return <div ref={inputRef} className="App">
     <h1>BUBBLE POPPER</h1>
-    <Bubble onSend={setNumBubbles}></Bubble>
-    <Bubble onSend={setNumBubbles}></Bubble>
-    <Bubble onSend={setNumBubbles}></Bubble>
-    <Bubble onSend={setNumBubbles}></Bubble>
+    <Bubble onPop={()=>{
+      setNumBubbles(numBubbles+1)
+      localStorage.setItem("numBubbles", numBubbles+1)
+    }}></Bubble>
+    <Bubble onPop={()=>{
+      setNumBubbles(numBubbles+1)
+      localStorage.setItem("numBubbles", numBubbles+1)
+    }}></Bubble>
+    <Bubble onPop={()=>{
+      setNumBubbles(numBubbles+1)
+      localStorage.setItem("numBubbles", numBubbles+1)
+    }}></Bubble>
+    <Bubble onPop={()=>{
+      setNumBubbles(numBubbles+1)
+      localStorage.setItem("numBubbles", numBubbles+1)
+    }}></Bubble>
+
     <Sidebar theApp={inputRef} num = {numBubbles}></Sidebar>
     <Instructions></Instructions>
     <footer>
