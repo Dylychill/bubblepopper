@@ -1,8 +1,13 @@
 import React, {useEffect, useState} from 'react';
+// import UIfx from 'uifx';
+// import mp3File from '/sunrise_over_eden_preview.mp3';
+
+// const beep = new UIFx({asset: mp3File});
 
 function Bubble(props) {
   // the number of bubbles that has been clicked, but broken
   const [numBubbles, setNum] = useState(0)
+  console.log(numBubbles + "in bubbles")
   // determining the size of the bubble - will persist
   const [size] = useState(Math.floor((Math.random() * 251) + 50))
   // getting the position of the bubble - will persist
@@ -18,18 +23,8 @@ function Bubble(props) {
       if(storedNum) {
         setNum(storedNum)
         props.onSend(storedNum)
-        console.log(props.onSend)
       }
-    }, [])
-
-  // get random location and size for a new bubble - only need to change width cuz it is a square
-  // largest is should be is 300px by 300px and smallest is 50px
-  // let size = Math.floor((Math.random() * 251) + 50);
-  // // for position, get random top and left based on max
-  // let height = 50;
-  // let side = Math.floor((Math.random() * window.innerWidth));
-  // console.log(side + "the side");
-  // console.log(window.innerWidth + "window");
+  }, [])
 
   return <div className="bubble" style={{top:verPos + "px", left: horPos + "px"}}>
     {show && <img style={{width:size + "px"}}
@@ -38,6 +33,7 @@ function Bubble(props) {
         setNum(numBubbles+1)
         localStorage.setItem("numBubbles", numBubbles+1)
         setShow(!show)
+        // beep.play
     }}
     src="/img/bubble.png" alt="a transparent, rainbow bubble"/>}
   </div>

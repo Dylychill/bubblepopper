@@ -5,9 +5,8 @@ import Button from '@material-ui/core/Button';
 // An array of possible background images
 const images = ["url('/img/gradient_lavender.png')","url('/img/gradient_orange&pink.png')","url('/img/gradient_orange&yellow.png')","url('/img/gradient_reds&oranges.png')"]
 
+// This sidebar will always be on the screen
 function Sidebar(props) {
-    // when the button is clicked, change the background color
-    // This sidebar will always be on the screen
     return <div className="sidebar">
       <p className="num_bubbles">{props.num}</p>
       <h2>Bubbles Popped</h2>

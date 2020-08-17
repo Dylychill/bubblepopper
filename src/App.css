@@ -103,3 +103,10 @@ p {
 .bubble img:hover {
   animation: pulse 0.3s linear 1;
 }
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width:100%;
+}
