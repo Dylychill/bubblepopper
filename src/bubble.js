@@ -1,8 +1,15 @@
 import React, {useEffect, useState} from 'react';
-// import UIfx from 'uifx';
-// import mp3File from '/sunrise_over_eden_preview.mp3';
+import UIfx from 'uifx'
+import audio from './Blop.mp3';
 
-// const beep = new UIFx({asset: mp3File});
+const beep = new UIfx(
+  audio,
+  {
+    volume: 0.6, // number between 0.0 ~ 1.0
+    throttleMs: 100
+  }
+)
+// const beep = new UIFx({asset: audio});
 
 function Bubble(props) {
   // determining the size of the bubble - will persist
@@ -18,9 +25,10 @@ function Bubble(props) {
       onClick = {() => {
         props.onPop()
         setShow(!show)
-        // beep.play
+        beep.play()
     }}
-    src="/img/bubble.png" alt="a transparent, rainbow bubble"/>}
+    src="/img/bubble.png" alt="a transparent, rainbow bubble"/>
+    }
   </div>
 }
 
